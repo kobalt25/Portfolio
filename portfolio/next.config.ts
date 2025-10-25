@@ -1,10 +1,16 @@
-/** @type {import('next').NextConfig} */
+import type { NextConfig } from 'next'
 
-const nextConfig = {
-    output: 'export', // ensures `next export` works
-    // basePath is required if deploying to a GitHub Pages repo under a username or project
-    // Example: https://username.github.io/repo-name
-    // basePath: '/repo-name',
-};
+const isProd = process.env.NODE_ENV === 'production';
 
-module.exports = nextConfig;
+const nextConfig: NextConfig = {
+    reactStrictMode: true,
+    images:{
+        unoptimized: true,
+    },
+    assetPrefix: isProd ? '/kobalt25.github.io' : '',
+    basePath: isProd ? '/kobalt25.github.io' : '',
+    output: 'export'
+    /* config options here */
+}
+
+export default nextConfig

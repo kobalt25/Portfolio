@@ -1,12 +1,12 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "homepage": "https://kobalt25.github.io/kobalt.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {

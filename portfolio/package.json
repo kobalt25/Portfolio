@@ -1,13 +1,10 @@
 {
-  "homepage": "https://kobalt25.github.io/kobalt.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "16.0.0",

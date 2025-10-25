@@ -1,8 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  output: "export",
-    reactStrictMode: true,
+const nextConfig = {
+    output: 'export', // ensures `next export` works
+    // basePath is required if deploying to a GitHub Pages repo under a username or project
+    // Example: https://username.github.io/repo-name
+    // basePath: '/repo-name',
 };
 
-export default nextConfig;
+module.exports = nextConfig;

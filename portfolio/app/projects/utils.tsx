@@ -43,12 +43,7 @@ const ProjectList = () => {
                     {filteredProjects.map((project) => (
                         <li
                             key={project.title}
-                            className="border border-[#276e6f] p-4 rounded-2xl shadow-md hover:shadow-lg transition bg-[#1f5e5f]"
-                            style={{
-                                background: "linear-gradient(160deg, #183C3A, #1E4A47",
-                                border: "1px solid rgba(79, 209, 197, 0.2",
-                                boxShadow: "0 4px 30px rgba(79, 209, 297, 0.1",
-                            }}
+                            className="border border-[#276e6f] p-4 rounded-2xl shadow-md hover:shadow-lg transition bg-[#1f5e5f] drop-shadow-gray-700"
                         >
                             <a
                                 href={project.link}

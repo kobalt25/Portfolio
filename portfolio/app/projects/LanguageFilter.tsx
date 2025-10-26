@@ -13,12 +13,12 @@ const LanguageFilter: React.FC<LanguageFilterProps> = ({
                                                            onSelectLanguage,
                                                        }) => {
     return (
-        <div className="sticky top-0 z-10 w-full flex flex-wrap gap-3 items-center mb-4 p-4 bg-[#2C7A7B]/90 backdrop-blur-md">
+        <div className="sticky top-0 rounded-3xl w-full flex flex-wrap gap-3 items-center mb-4 p-4 bg-[#1e5556]/90 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
             {/* "All" Button */}
             <button
                 onClick={() => onSelectLanguage(null)}
                 className={`
-          px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 transform
+          px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-300 transform
           border border-[#186162]
           hover:bg-[#a2f5e9] hover:text-[#1f5e5f] hover:scale-105
           ${selectedLanguage === null ? "bg-white text-[#1f5e5f] shadow-md" : "bg-[#1f6b6c] text-white"}
@@ -33,10 +33,10 @@ const LanguageFilter: React.FC<LanguageFilterProps> = ({
                     key={lang}
                     onClick={() => onSelectLanguage(lang)}
                     className={`
-            px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 transform
+            px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-300 transform
             border border-[#186162]
-            hover:bg-[#a2f5e9] hover:text-[#1f5e5f] hover:scale-105
-            ${selectedLanguage === lang ? "bg-white text-[#1f5e5f] shadow-md" : "bg-[#1f6b6c] text-white"}
+            hover:bg-[#285E61] hover:text-white hover:scale-105
+            ${selectedLanguage === lang ? "bg-[#319795] text-black" : "bg-[#1E2E2E] border-[#285E61] text-white"}
           `}
                 >
                     {lang}

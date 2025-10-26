@@ -7,7 +7,7 @@
     },
     {
       "title":"Portfolio Website",
-      "languages": ["Typescript", "React", "CSS", "HTML"],
+      "languages": ["Typescript", "React", "Tailwind CSS", "HTML"],
       "link": "https://github.com/kobalt25/kobalt25.github.io"
     }
 ]

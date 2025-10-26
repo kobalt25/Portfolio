@@ -24,10 +24,10 @@ const ProjectList = () => {
 
     return (
         <div className="flex flex-col items-center w-full">
-            <h2 className="text-xl font-bold mb-4 text-center text-white">Projects</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center text-white">Projects</h2>
             {/* Filter Banner */}
             {allLanguages.length > 0 && (
-                <div className="w-full max-w-3xl">
+                <div className="w-full max-w-3xl bg">
                     <LanguageFilter
                         languages={allLanguages}
                         selectedLanguage={selectedLanguage}
@@ -44,6 +44,11 @@ const ProjectList = () => {
                         <li
                             key={project.title}
                             className="border border-[#276e6f] p-4 rounded-2xl shadow-md hover:shadow-lg transition bg-[#1f5e5f]"
+                            style={{
+                                background: "linear-gradient(160deg, #183C3A, #1E4A47",
+                                border: "1px solid rgba(79, 209, 197, 0.2",
+                                boxShadow: "0 4px 30px rgba(79, 209, 297, 0.1",
+                            }}
                         >
                             <a
                                 href={project.link}

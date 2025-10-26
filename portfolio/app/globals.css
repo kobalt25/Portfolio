@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.hover-glow:hover {
+    box-shadow: 0 0 12px rgba(79, 209, 197, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
